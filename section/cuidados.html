@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Cuidados, Curacion tatuajes" />
+    <meta name="description" content="Cuidados del tatuajes" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon" />
+    <title>Cuidados</title>
+  </head>
+  <body>
+    <header class="header-cuidados">
+      <div class="contenedor-nav-fig">
+        <!-- Logo de pagina -->
+        <figure class="logo-redondo">
+          <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
+            <img
+              src="../img/logo.png"
+              alt="Logo Se Real Tattoo (local de tatuajes)"
+            />
+          </a>
+        </figure>
+
+        <nav>
+          <ul class="lista-nav">
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="quienes_somos.html">Quienes somos</a>
+            </li>
+            <li>
+              <a href="cuidados.html">Cuidados</a>
+            </li>
+            <li>
+              <a href="productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+
+            <li>
+              <button
+                class="dropdown-toggle galeria"
+                type="button"
+                onclick="mostrarOcultarGal()"
+              >
+                Galeria
+              </button>
+            </li>
+          </ul>
+          <div class="categorias-galeria" id="cat-galeria">
+            <div>
+              <ul>
+                <li>
+                  <a href="galeria.html">Galeria Completa</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a href="galeria.html#ancla-trabajos">Trabajos Realizados</a>
+                </li>
+                <li>
+                  <a href="galeria.html#ancla-diseños">Diseños disponibles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="tit-h1-secciones">Cuidados</h1>
+    </main>
+
+    <section class="section-cuidados">
+      <!-- Contenedor con informacion -->
+      <div class="div-info-cuidados">
+        <div class="info-cuidados">
+          <ul>
+            <li>Dejar film durante 2 horas al salir del estudio.</li>
+            <li>Lavar con jabón neutro o de glicerina.</li>
+            <li>
+              Despues del lavado humectar la zona del tattoo con una capa fina
+              de crema Dermaglos o Platsul.
+            </li>
+            <li>
+              Realizar el proceso anterior 4 veces al dia durante 15 dias.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contenedor advertencias -->
+      <div class="div-advertencias">
+        <div>
+          <figure>
+            <img
+              src="../img/cuidado.png"
+              alt="Icono de curación. Mano sosteniendo un corazón con una cruz."
+            />
+          </figure>
+          <p>
+            El proceso de cuidado es 100% tu responsabilidad, sigue los pasos
+            indicados para un mejor resultado.
+          </p>
+        </div>
+        <div>
+          <figure>
+            <img
+              src="../img/advertencia.png"
+              alt="Icono de advertencia. Triangulo amarrillo con signo de admiración en el centro"
+            />
+          </figure>
+          <p>
+            Utilizar solo las cremas recomendadas por nuestro equipo de trabajo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <!-- Acordeon solo se muestra en tamaños hasta 767px -->
+        <div class="contenedor-direccion">
+          <div>
+            <h2>
+              <button
+                class="contenedor-boton"
+                type="button"
+                onclick="mostrarOcultarContDir()"
+              >
+                <strong class="dropdown-toggle"> Ver dirección</strong>
+              </button>
+            </h2>
+            <div class="contenedor-datos" id="cont-direccion">
+              <div>
+                <h3 class="contenedor-h3">
+                  Horario de atención:
+                  <p>Lunes a sabado de 11am a 20pm</p>
+                </h3>
+                <h3 class="contenedor-h3">
+                  Ubicación:
+                  <p>Lisandro de la torre 1896</p>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenedor de direccion de muestra en tamaños de pantalla mayores a 768px -->
+        <div class="footer-simple">
+          <h2>Información</h2>
+          <h3>Horario de atención: Lunes a sabado de 11:00am hasta 20:00pm</h3>
+          <h3>Ubicación: Lisandro de la torre 1896</h3>
+        </div>
+
+        <!-- Contenedor de iconos -->
+        <div class="div-iconos">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="../img/icons8-facebook-nuevo.svg"
+              alt="Icono de Facebook. Letra F en azul."
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/se.real.tattoo/?hl=es"
+            target="_blank"
+          >
+            <img
+              src="../img/icons8-instagram.svg"
+              alt="Icono de Instagram. Camara de fotos."
+            />
+          </a>
+          <a href="https://wa.me/15551234567" target="_blank">
+            <img
+              src="../img/icons8-whatsapp.svg"
+              alt="Icono de whatsapp. Telefono en globo de dialogo verde."
+            />
+          </a>
+        </div>
+      </div>
+
+      <!--Contendor copyright -->
+      <div class="contenedor-copyright">
+        <div class="copyright">
+          <p>© 2023 Copyright:</p>
+          <a href="https://www.linkedin.com/in/johanna-c-padilla"
+            >Johanna Carolina Padilla</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts de pagina -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

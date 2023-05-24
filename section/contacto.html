@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Mauro Blanco, Contacto, Instagram" />
+    <meta
+      name="description"
+      content="Reserva tu turno en nuestro local. Telefono: 1587954622"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor-nav-fig">
+        <!-- Logo de pagina -->
+        <figure class="logo-redondo">
+          <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
+            <img
+              src="../img/logo.png"
+              alt="Logo Se Real Tattoo (local de tatuajes)"
+            />
+          </a>
+        </figure>
+
+        <nav>
+          <ul class="lista-nav">
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="quienes_somos.html">Quienes somos</a>
+            </li>
+            <li>
+              <a href="cuidados.html">Cuidados</a>
+            </li>
+            <li>
+              <a href="productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+
+            <li>
+              <button
+                class="dropdown-toggle galeria"
+                type="button"
+                onclick="mostrarOcultarGal()"
+              >
+                Galeria
+              </button>
+            </li>
+          </ul>
+          <div class="categorias-galeria" id="cat-galeria">
+            <div>
+              <ul>
+                <li>
+                  <a href="galeria.html">Galeria Completa</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a href="galeria.html#ancla-trabajos">Trabajos Realizados</a>
+                </li>
+                <li>
+                  <a href="galeria.html#ancla-diseños">Diseños disponibles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="tit-h1-secciones">Contacto</h1>
+    </main>
+
+    <section class="sec-contacto">
+      <div class="contenedor-contacto">
+        <!-- Contenedor con informacion -->
+        <div class="contacto-data">
+          <div>
+            <h4 class="sec-div-h4-contacto">
+              Podes pedir turnos o consultar con nosotros de las siguientes
+              maneras:
+            </h4>
+            <ul>
+              <li class="sec-ul-contacto">
+                <p class="item-contacto">Telefono:</p>
+                <p class="item-detalle">
+                  1587954622 (Llamadas y whatsapp dentro del horario de
+                  atencion)
+                </p>
+              </li>
+              <li class="sec-ul-contacto">
+                <p class="item-contacto">Email:</p>
+                <p class="item-detalle">mauro@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="formulario">
+          <h4>Formulario de contacto</h4>
+          <form onsubmit="return validarFormulario()">
+            <div class="datos">
+              <label for="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Juan Castillo"
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="juancastillo@gmail.com"
+                required
+              />
+
+              <label for="telefono">Telefono:</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="(xx) xxxx-xxxx"
+                required
+              />
+
+              <label for="fecha">Fecha y hora en la que desea turno:</label>
+              <input
+                type="datetime-local"
+                id="fecha"
+                name="fecha"
+                class="fecha"
+              />
+            </div>
+            <div class="mensaje">
+              <textarea
+                name="mensaje"
+                type="text"
+                id="mensaje"
+                placeholder="Detalle aqui una breve descripcion del tatuaje que deseas hacerse."
+                rows="5"
+              ></textarea>
+            </div>
+            <input type="submit" value="Enviar" id="enviar" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <!-- Acordeon solo se muestra en tamaños hasta 767px -->
+        <div class="contenedor-direccion">
+          <div>
+            <h2>
+              <button
+                class="contenedor-boton"
+                type="button"
+                onclick="mostrarOcultarContDir()"
+              >
+                <strong class="dropdown-toggle"> Ver dirección</strong>
+              </button>
+            </h2>
+            <div class="contenedor-datos" id="cont-direccion">
+              <div>
+                <h3 class="contenedor-h3">
+                  Horario de atención:
+                  <p>Lunes a sabado de 11am a 20pm</p>
+                </h3>
+                <h3 class="contenedor-h3">
+                  Ubicación:
+                  <p>Lisandro de la torre 1896</p>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenedor de direccion de muestra en tamaños de pantalla mayores a 768px -->
+        <div class="footer-simple">
+          <h2>Información</h2>
+          <h3>Horario de atención: Lunes a sabado de 11:00am hasta 20:00pm</h3>
+          <h3>Ubicación: Lisandro de la torre 1896</h3>
+        </div>
+
+        <!-- Contenedor de iconos -->
+        <div class="div-iconos">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="../img/icons8-facebook-nuevo.svg"
+              alt="Icono de Facebook. Letra F en azul."
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/se.real.tattoo/?hl=es"
+            target="_blank"
+          >
+            <img
+              src="../img/icons8-instagram.svg"
+              alt="Icono de Instagram. Camara de fotos."
+            />
+          </a>
+          <a href="https://wa.me/15551234567" target="_blank">
+            <img
+              src="../img/icons8-whatsapp.svg"
+              alt="Icono de whatsapp. Telefono en globo de dialogo verde."
+            />
+          </a>
+        </div>
+      </div>
+
+      <!--Contendor copyright -->
+      <div class="contenedor-copyright">
+        <div class="copyright">
+          <p>© 2023 Copyright:</p>
+          <a href="https://www.linkedin.com/in/johanna-c-padilla"
+            >Johanna Carolina Padilla</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts de pagina -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/formulario.js"></script>
+  </body>
+</html>

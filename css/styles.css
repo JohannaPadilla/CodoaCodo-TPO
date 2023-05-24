@@ -1,0 +1,1001 @@
+/* Reseteo de predeterminados */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reseteo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importe de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins:ital,wght@1,200&family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+
+/* Variables */
+:root {
+  --color-principal: #171717;
+  --color-secundario: #444444;
+  --color-terciario: #ededed;
+  --color-cuaternario: #176061;
+}
+
+/* BODY */
+body {
+  background-color: var(--color-terciario);
+}
+
+
+/* INDEX */
+/* Navbar */
+.contenedor-nav-fig {
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-principal);
+  padding: 1em 0;
+}
+.logo-redondo {
+  padding-bottom: 1em;
+}
+.logo-redondo a img {
+  border: 1px solid var(--color-terciario);
+  border-radius: 50%;
+}
+.lista-nav li a,
+.categorias-galeria ul li a,
+.galeria {
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: var(--color-terciario);
+}
+.lista-nav li a:hover,
+.lista-nav li button:hover {
+  background-color: var(--color-secundario);
+  border-radius: 5px;
+}
+.lista-nav li a:hover {
+  padding: 0.2em;
+}
+.lista-nav li button:hover {
+  padding: 0 0.2em;
+}
+.galeria {
+  border: none;
+  background: none;
+}
+.categorias-galeria {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--color-secundario);
+  border-radius: 10px;
+}
+
+/* Main */
+.main-index {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
+.portada-chica img {
+  width: 100%;
+}
+.main-h1 {
+  display: none;
+}
+.div-titulos h2 {
+  font-size: 2em;
+  padding: 0.4em 0;
+}
+.div-titulos p {
+  font-size: 1.1em;
+}
+
+/* Section */
+.tit-h1,
+.tit-h1-secciones {
+  text-align: center;
+  background-color: var(--color-principal);
+  color: var(--color-terciario);
+  font-size: 1.5em;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+.container-destacados {
+  width: 100%;
+}
+@keyframes zoom-dest {
+  0% {
+    transform: scale(0.5);
+  }
+}
+.destacado {
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
+  background-color: var(--color-secundario);
+  border-radius: 10px;
+  padding: 1em 0;
+  color: var(--color-terciario);
+  animation: zoom-dest;
+  animation-duration: 2s;
+}
+.destacado-titulo {
+  font-size: 1.3em;
+  color: var(--color-terciario);
+  font-weight: bold;
+}
+.destacado-contenido {
+  width: 100%;
+  margin: 0 auto;
+}
+.destacado-imagen {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+.destacado-subtitulo {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  background-color: var(--color-terciario);
+  color: var(--color-secundario);
+  letter-spacing: 1px;
+}
+.destacado-p {
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.destacado-link {
+  text-decoration: none;
+  color: var(--color-cuaternario);
+  background-color: var(--color-terciario);
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.container-footer {
+  width: 100%;
+}
+.contenedor-direccion,
+.div-iconos {
+  width: 100%;
+  margin: 1em auto;
+}
+.contenedor-boton {
+  width: 100%;
+  border: none;
+  background-color: var(--color-secundario);
+  font-size: 1.5em;
+  padding: 0.5em 0;
+  color: var(--color-terciario);
+  letter-spacing: 1px;
+}
+.contenedor-datos {
+  text-align: center;
+  line-height: 1.3;
+  padding-top: 1em;
+}
+.contenedor-h3 {
+  font-weight: bolder;
+}
+.contenedor-h3 p {
+  font-weight: normal;
+}
+.footer-simple {
+  display: none;
+}
+.div-iconos {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 1em;
+}
+.contenedor-copyright {
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-secundario);
+  padding: 1em 0;
+}
+.copyright {
+  width: 80%;
+  margin: 0 auto;
+}
+.copyright p {
+  padding-bottom: 0.5em;
+}
+.contenedor-copyright .copyright a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-cuaternario);
+}
+
+
+
+/* QUIENES SOMOS */
+/* Main */
+.tit-h1-secciones {
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  text-decoration: underline overline;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+/* Section */
+.sec_quienes_somos,
+.section-cuidados,
+.sec-contacto,
+.sec-galeria,
+.div-historia {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.div-quienes_somos,
+.div-info-cuidados,
+.div-advertencias {
+  padding-bottom: 2em;
+}
+
+.div-historia,
+.info-cuidados h2,
+.h2-galeria {
+  padding-bottom: 1em;
+}
+.h3-quienes_somos,
+.info-cuidados h2,
+.h2-galeria {
+  font-size: 1.5em;
+}
+.p-quienes_somos,
+.info-cuidados ul li,
+.div-advertencias p {
+  font-size: 1.2em;
+  line-height: 1.3;
+  padding-bottom: 1em;
+}
+.p-quienes_somos:last-child,
+.sec-div-h4-contacto,
+.sec-ul-contacto:first-child {
+  padding-top: 0.5em;
+}
+.sec_quienes_somos figure img {
+  width: 100%;
+}
+
+
+
+/* CUIDADOS */
+/* Section */
+.info-cuidados ul li {
+  padding-bottom: 0.5em;
+}
+.info-cuidados ul,
+.div-advertencias {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+.info-cuidados li::before {
+  content: " ✦ ";
+}
+.div-advertencias {
+  text-align: center;
+}
+.div-advertencias figure img {
+  width: 100%;
+}
+
+
+
+/* PRODUCTOS */
+/* Section */
+.div-productos,
+.trabajos,
+.diseños {
+  width: 100%;
+  margin: 0 auto;
+}
+.contenedor-carrito{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.carrito{
+  background-color: var(--color-cuaternario);
+  color: var(--color-terciario);
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0.3em 0.8em;
+  border-radius: 5px;
+  position: relative;
+}
+.carrito:hover{
+  color: var(--color-terciario);
+}
+.contador-carrito{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(55%, -50%);
+  padding: 0.25em 0.5em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: var(--color-secundario);
+}
+.contenedor-producto {
+  width: 100%;
+  margin: 1.5em auto;
+}
+.tarjeta-producto,
+.tarjeta-tatuajes-realizados,
+.tarjeta-diseños-disponibles {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  box-shadow: 5px 5px 10px var(--color-cuaternario);
+}
+.tarjeta-producto img {
+  width: 100%;
+  margin: 1em auto;
+}
+.nombre-producto {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.boton-detalle,
+.boton-producto {
+  border: none;
+  margin: 0.5em 0;
+}
+.boton-detalle {
+  background: none;
+  color: var(--color-terciario);
+}
+.boton-producto {
+  background-color: var(--color-cuaternario);
+  padding: 0.5em 1em;
+  color: var(--color-terciario);
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+
+
+/* CONTACTO */
+/* Section */
+.sec-contacto {
+  display: flex;
+}
+.contenedor-contacto {
+  display: flex;
+  width: 100%;
+  margin: 2em auto;
+  justify-content: space-around;
+  box-shadow: -5px 5px 15px var(--color-secundario);
+  border-radius: 2px;
+  padding: 1em 3em;
+  gap: 30px;
+}
+.contacto-data {
+  display: flex;
+  width: 100%;
+}
+.sec-div-h4-contacto {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.contacto-data ul {
+  padding-bottom: 1em;
+}
+.item-contacto {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.4em;
+  line-height: 2;
+}
+.item-detalle {
+  font-size: 1em;
+}
+.formulario {
+  width: 100%;
+  box-shadow: none;
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  border-radius: 2px;
+}
+.formulario h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1em;
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  padding: 0.5em 0;
+}
+form,
+.datos,
+.mensaje {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.datos,
+.mensaje {
+  text-align: center;
+  width: 70%;
+  line-height: 1;
+  margin-bottom: 1.5em;
+}
+.datos label {
+  margin-bottom: 0.3em;
+  margin-top: 1.3em;
+}
+.datos input,
+.mensaje textarea {
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px var(--color-principal);
+  background-color: var(--color-terciario);
+}
+form input[type="submit"] {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border: none;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  background-color: var(--color-cuaternario);
+  color: var(--color-terciario);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.fecha {
+  color: #726e6e;
+}
+
+
+
+
+/* GALERIA */
+/* Section */
+.h2-galeria {
+  padding-top: 1em;
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  margin-bottom: 1em;
+}
+.trabajos,
+.diseños {
+  margin: 2em 0;
+}
+.tarjeta-tatuajes-realizados,
+.tarjeta-diseños-disponibles {
+  background: none;
+  box-shadow: none;
+}
+.tarjeta-tatuajes-realizados img,
+.tarjeta-diseños-disponibles img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: -5px -5px 10px var(--color-secundario);
+}
+
+
+
+/* CARRITO */
+.contenedor-productos{
+  width: 70%;
+  margin: 0 auto;
+}
+.contenedor-productos h2{
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  text-align: center;
+  padding: 0.8em 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lista-productos{
+  display: flex;
+  color: var(--color-principal);
+}
+.contendor-boton{
+  text-align: end;
+}
+.boton-vaciar{
+  border: none;
+  font-size: 1.2em;
+}
+.alinear{
+  vertical-align: middle;
+}
+.totales{
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+}
+.alerta{
+  width: 100%;
+  background-color: rgba(224, 107, 107, 0.527);
+  color: brown;
+  margin: 1em 0;
+  padding: 1em;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(224, 107, 107, 0.527);
+}
+
+
+/* CLIENTES */
+.div-opiniones{
+  width: 90%;
+  margin: 0 auto;
+}
+.div-opiniones table{
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+.div-opiniones table thead{
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+}
+.div-opiniones table thead tr th{
+  padding: 1em;
+}
+.div-opiniones td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  vertical-align: middle;
+}
+.boton-atras{
+  margin-bottom: 1em;
+}
+
+/* ----------------------------------------------------------- Mobile firth --------------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+
+  /* INDEX */
+  .categorias-galeria {
+    width: 60%;
+  }
+  .destacado {
+    width: 80%;
+  }
+  .destacado-contenido {
+    width: 90%;
+  }
+  .contenedor-direccion,
+  .div-iconos {
+    width: 80%;
+  }
+  .contenedor-copyright {
+    color: var(--color-terciario);
+  }
+  .contenedor-copyright .copyright a {
+    color: var(--color-terciario);
+  }
+
+
+
+  /* QUIENES SOMOS */
+  /* Main */
+  .sec_quienes_somos {
+    width: 80%;
+  }
+  /* Section */
+  .div-quienes_somos-iframe {
+    display: none;
+  }
+  .sec_quienes_somos figure img {
+    border-radius: 50%;
+  }
+
+
+
+  /* CUIDADOS */
+  /* Section */
+  .info-cuidados ul,
+  .div-advertencias {
+    width: 80%;
+  }
+  .div-advertencias {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    padding: 2em 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--color-principal);
+  }
+  .div-advertencias div:first-child {
+    margin-bottom: 1em;
+  }
+  .div-advertencias figure img {
+    width: 30%;
+    margin-bottom: 1em;
+  }
+
+
+
+  /* PRODUCTOS */
+  /* Section */
+  .div-productos {
+    width: 80%;
+  }
+  .contenedor-producto {
+    width: 80%;
+  }
+  .tarjeta-producto img {
+    width: 80%;
+  }
+
+
+
+  /* CONTACTO */
+  /* Section */
+  .sec-contacto {
+    width: 80%;
+  }
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5em;
+  }
+  .formulario {
+    margin-bottom: 1em;
+  }
+  .datos,
+  .mensaje {
+    width: 90%;
+  }
+  form input[type="submit"] {
+    width: 50%;
+  }
+
+
+
+  /* GALERIA */
+  /* Section */
+  .tarjeta-tatuajes-realizados img,
+  .tarjeta-diseños-disponibles img {
+    width: 70%;
+    margin: 1em 0;
+  }
+  .diseños {
+    margin-top: 1em;
+  }
+}
+
+
+
+
+/* -------------------------------------------------------------------- MINIMO 768  ------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+
+
+  /* INDEX */
+  .lista-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .categorias-galeria {
+    position: absolute;
+    right: 0;
+    width: 25%;
+  }
+  .div-titulos h2 {
+    font-size: 4em;
+  }
+  .div-titulos p {
+    font-size: 2em;
+  }
+  .container-destacados {
+    display: flex;
+  }
+  .destacado {
+    width: 30%;
+  }
+  .destacado-contenido {
+    width: 90%;
+  }
+  .container-footer {
+    display: flex;
+    background-color: var(--color-secundario);
+    padding: 1em 0;
+    color: var(--color-terciario);
+    align-items: center;
+  }
+  .contenedor-direccion {
+    display: none;
+  }
+  .footer-simple {
+    display: block;
+    padding-left: 1em;
+  }
+  .footer-simple h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+  }
+  .footer-simple h3 span {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .div-iconos {
+    width: 30%;
+    justify-content: right;
+    padding-top: 1em;
+  }
+  .contenedor-copyright {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+  }
+  .contenedor-copyright a {
+    color: var(--color-secundario);
+  }
+
+
+
+  /* QUIENES SOMOS */
+  /* Section */
+  .div-historia {
+    width: 80%;
+  }
+  .div-quienes_somos-iframe {
+    display: none;
+  }
+  .sec_quienes_somos figure img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px var(--color-secundario);
+  }
+
+
+
+  /* CUIDADOS */
+  /* Section */
+  .section-cuidados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-cuidados ul {
+    width: 90%;
+  }
+  .div-advertencias {
+    width: 40%;
+    padding-bottom: 0;
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+  }
+  .div-advertencias figure img {
+    width: 20%;
+  }
+
+
+
+  /* PRODUCTOS */
+  /* Section */
+  .div-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-producto {
+    width: 30%;
+  }
+  .tarjeta-producto {
+    width: 80%;
+  }
+  .tarjeta-producto img {
+    width: 90%;
+  }
+
+
+
+  /* CONTACTO */
+  /* Section */
+  .sec-contacto {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-div-contacto iframe {
+    display: none;
+  }
+
+
+
+  /* GALERIA */
+  /* Section */
+  .trabajos,
+  .diseños {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .tarjeta-tatuajes-realizados img,
+  .tarjeta-diseños-disponibles img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+
+
+
+/* -------------------------------------------------------------------- MINIMO 1025  ------------------------------------------------------------------------*/
+@media screen and (min-width: 1025px) {
+
+
+  /* INDEX */
+  header {
+    background-color: var(--color-principal);
+  }
+  .contenedor-nav-fig {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .lista-nav {
+    gap: 2em;
+  }
+  .categorias-galeria {
+    position: relative;
+  }
+  .main-index {
+    text-align: left;
+    background-image: linear-gradient(
+        rgba(56, 56, 56, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(../img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .div-titulos {
+    width: 60%;
+  }
+  .div-titulos h2 {
+    color: var(--color-principal);
+  }
+  .div-titulos p {
+    color: var(--color-principal);
+  }
+  .portada-chica img {
+    width: 60%;
+  }
+  .destacado {
+    width: 20%;
+  }
+
+  .footer-simple {
+    margin-left: 2em;
+  }
+
+
+
+  /* QUIENES SOMOS */
+  /* Section */
+  .div-quienes_somos {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .div-quienes_somos-iframe {
+    display: block;
+    box-shadow: 5px 5px 10px var(--color-secundario);
+    margin: 0 2em;
+  }
+  .sec_quienes_somos figure img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--color-secundario);
+  }
+
+
+
+  /* CUIDADOS */
+  /* Section */
+  .section-cuidados {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .info-cuidados ul {
+    margin-left: 2em;
+    width: 100%;
+  }
+
+
+
+  /* PRODUCTOS */
+  /* Section */
+  .contenedor-producto {
+    width: 20%;
+  }
+
+
+
+  /* CONTACTO */
+  /* Section */
+  .sec-contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contenedor-contacto {
+    flex-direction: row;
+  }
+  .sec-div-contacto iframe {
+    display: inline-block;
+    width: 80%;
+  }
+
+
+
+  /* GALERIA */
+  /* Section */
+  .tarjeta-tatuajes-realizados img,
+  .tarjeta-diseños-disponibles img {
+    width: 100%;
+    transition: transform 2s linear;
+    transition-delay: 0.2s;
+  }
+  .tarjeta-tatuajes-realizados:hover img,
+  .tarjeta-diseños-disponibles img:hover {
+    transform: scale(1.5);
+  }
+}
